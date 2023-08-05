@@ -3,6 +3,10 @@
   "version": "0.0.1",
   "type": "module",
   "types": "dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/RandomGameDev/atomplexus",
+    "type": "git"
+  },
   "exports": {
     ".": {
       "require": "./dist/atomplexus.cjs",
