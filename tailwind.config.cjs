@@ -3,6 +3,7 @@ const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 export default {
+  prefix: 'ap-',
   content: [
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/stories/**/*.{js,ts,jsx,tsx}',

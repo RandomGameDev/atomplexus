@@ -772,205 +772,197 @@ select {
   --tw-backdrop-sepia:  ;
 }
 
-.prose-md {
+.ap-prose-md {
   font-size: 1rem;
 }
 
-.prose-sm {
+.ap-prose-sm {
   font-size: 0.875rem;
 }
 
-.prose-xs {
+.ap-prose-xs {
   font-size: 0.75rem;
 }
 
-.m-\[-2px\] {
+.ap-m-\[-2px\] {
   margin: -2px;
 }
 
-.mb-\[2px\] {
+.ap-mb-\[2px\] {
   margin-bottom: 2px;
 }
 
-.flex {
+.ap-flex {
   display: flex;
 }
 
-.h-10 {
+.ap-h-10 {
   height: 2.5rem;
 }
 
-.items-center {
+.ap-items-center {
   align-items: center;
 }
 
-.justify-center {
+.ap-justify-center {
   justify-content: center;
 }
 
-.rounded-md {
+.ap-rounded-md {
   border-radius: 0.375rem;
 }
 
-.rounded-none {
+.ap-rounded-none {
   border-radius: 0px;
 }
 
-.rounded-sm {
+.ap-rounded-sm {
   border-radius: 0.125rem;
 }
 
-.border-2 {
+.ap-border-2 {
   border-width: 2px;
 }
 
-.border {
+.ap-border {
   border-width: 1px;
 }
 
-.border-grey-50\/30 {
-  border-color: rgb(154 154 154 / 0.3);
-}
-
-.border-grey-50\/50 {
-  border-color: rgb(154 154 154 / 0.5);
-}
-
-.border-grey-50\/40 {
+.ap-border-grey-50\/40 {
   border-color: rgb(154 154 154 / 0.4);
 }
 
-.bg-clear {
+.ap-bg-clear {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-danger-50 {
+.ap-bg-danger-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(221 61 28 / var(--tw-bg-opacity));
 }
 
-.bg-danger-70 {
+.ap-bg-danger-70 {
   --tw-bg-opacity: 1;
   background-color: rgb(159 16 14 / var(--tw-bg-opacity));
 }
 
-.bg-grey-10 {
+.ap-bg-grey-10 {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
-.bg-grey-30 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 231 231 / var(--tw-bg-opacity));
-}
-
-.bg-grey-50 {
+.ap-bg-grey-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(154 154 154 / var(--tw-bg-opacity));
 }
 
-.bg-grey-70 {
+.ap-bg-grey-70 {
   --tw-bg-opacity: 1;
   background-color: rgb(96 96 96 / var(--tw-bg-opacity));
 }
 
-.bg-info-50 {
+.ap-bg-info-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(0 109 211 / var(--tw-bg-opacity));
 }
 
-.bg-info-70 {
+.ap-bg-info-70 {
   --tw-bg-opacity: 1;
   background-color: rgb(0 62 151 / var(--tw-bg-opacity));
 }
 
-.bg-warning-50 {
+.ap-bg-warning-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(252 185 0 / var(--tw-bg-opacity));
 }
 
-.bg-warning-70 {
+.ap-bg-warning-70 {
   --tw-bg-opacity: 1;
   background-color: rgb(181 123 0 / var(--tw-bg-opacity));
 }
 
-.p-1 {
+.ap-bg-grey-30 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 231 231 / var(--tw-bg-opacity));
+}
+
+.ap-p-1 {
   padding: 0.25rem;
 }
 
-.p-1\.5 {
+.ap-p-1\.5 {
   padding: 0.375rem;
 }
 
-.px-4 {
+.ap-px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
-.py-2 {
+.ap-py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
 
-.pl-2 {
+.ap-px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.ap-pl-2 {
   padding-left: 0.5rem;
 }
 
-.pr-2 {
+.ap-pr-2 {
   padding-right: 0.5rem;
 }
 
-.font-medium {
+.ap-font-medium {
   font-weight: 500;
 }
 
-.text-clear {
+.ap-text-clear {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-info-70 {
+.ap-text-info-70 {
   --tw-text-opacity: 1;
   color: rgb(0 62 151 / var(--tw-text-opacity));
 }
 
-.outline-none {
+.ap-outline-none {
   outline: 2px solid transparent;
   outline-offset: 2px;
 }
 
-.hover\:bg-danger-50:hover {
+.hover\:ap-bg-danger-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(221 61 28 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-grey-10:hover {
+.hover\:ap-bg-grey-10:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-grey-50:hover {
+.hover\:ap-bg-grey-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(154 154 154 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-info-50:hover {
+.hover\:ap-bg-info-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(0 109 211 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-warning-70:hover {
+.hover\:ap-bg-warning-70:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(181 123 0 / var(--tw-bg-opacity));
 }
 
-.focus\:ring:focus {
+.focus\:ap-ring:focus {
   --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0
     var(--tw-ring-offset-width) var(--tw-ring-offset-color);
   --tw-ring-shadow: var(--tw-ring-inset) 0 0 0
@@ -979,7 +971,7 @@ select {
     var(--tw-shadow, 0 0 #0000);
 }
 
-.focus\:ring-info-30:focus {
+.focus\:ap-ring-info-30:focus {
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(96 186 241 / var(--tw-ring-opacity));
 }

@@ -1,20 +1,22 @@
 {
   "name": "atomplexus",
-  "version": "0.0.1",
-  "type": "module",
-  "types": "dist/index.d.ts",
+  "version": "0.0.2",
   "repository": {
     "url": "https://github.com/RandomGameDev/atomplexus",
     "type": "git"
   },
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "main": "./dist/atomplexus.cjs",
+  "module": "./dist/atomplexus.js",
   "exports": {
     ".": {
       "require": "./dist/atomplexus.cjs",
       "import": "./dist/atomplexus.es.js"
     },
-    "./styles.css": {
-      "require": "./dist/styles.css",
-      "default": "./dist/styles.css"
+    "./atomplexus.css": {
+      "require": "./dist/atomplexus.css",
+      "default": "./dist/atomplexus.css"
     }
   },
   "files": [
@@ -23,7 +25,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build && npm run build:css",
-    "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/styles.css",
+    "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/atomplexus.css",
     "lint": "concurrently \"eslint \"src/**\" --fix\" \"stylelint \"**/*.css\" --fix\" \"tsc --noEmit\"",
     "storybook": "concurrently \"npm run storybook:css\" \"storybook dev -p 6006\"",
     "storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",

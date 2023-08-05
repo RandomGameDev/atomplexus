@@ -37,29 +37,29 @@ export const Button = ({
       type={type}
       onClick={onClick}
       className={clsx(
-        'flex items-center justify-center rounded-md font-medium outline-none focus:ring focus:ring-info-30',
+        'ap-flex ap-items-center ap-justify-center ap-rounded-md ap-font-medium ap-outline-none focus:ap-ring focus:ap-ring-info-30',
         {
-          'prose-md h-10 px-4 py-2': size === 'normal',
-          'prose-sm p-1.5': size === 'small',
-          'prose-xs p-1': size === 'extrasmall',
-          'bg-info-70 text-clear hover:bg-info-50':
+          'ap-prose-md ap-h-10 ap-px-4 ap-py-2': size === 'normal',
+          'ap-prose-sm ap-p-1.5': size === 'small',
+          'ap-prose-xs ap-p-1': size === 'extrasmall',
+          'ap-bg-info-70 ap-text-clear hover:ap-bg-info-50':
             theme === 'primary' && !disabled,
-          'bg-warning-50 text-clear hover:bg-warning-70':
+          'ap-bg-warning-50 ap-text-clear hover:ap-bg-warning-70':
             theme === 'warning' && !disabled,
-          'bg-danger-70 text-clear hover:bg-danger-50':
+          'ap-bg-danger-70 ap-text-clear hover:ap-bg-danger-50':
             theme === 'danger' && !disabled,
-          'm-[-2px] border-2 bg-clear text-info-70 hover:bg-grey-10':
+          'ap-m-[-2px] ap-border-2 ap-bg-clear ap-text-info-70 hover:ap-bg-grey-10':
             theme === 'clear' && !disabled,
-          'bg-grey-70 text-clear hover:bg-grey-50': disabled,
-          'rounded-none': square,
+          'ap-bg-grey-70 ap-text-clear hover:ap-bg-grey-50': disabled,
+          'ap-rounded-none': square,
         },
         className
       )}
       disabled={disabled}
     >
-      <div className="mb-[2px] pr-2">{leftIcon}</div>
+      <div className="ap-mb-[2px] ap-pr-2">{leftIcon}</div>
       {children}
-      <div className="mb-[2px] pl-2">{rightIcon}</div>
+      <div className="ap-mb-[2px] ap-pl-2">{rightIcon}</div>
     </button>
   )
 }

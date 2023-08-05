@@ -13,10 +13,10 @@ export const Card = ({
   return (
     <div
       className={clsx(
-        'rounded-sm border border-grey-50/40 px-6 py-2',
+        'ap-rounded-sm ap-border ap-border-grey-50/40 ap-px-6 ap-py-2',
         {
-          'bg-clear': !disabled,
-          'bg-grey-30': disabled,
+          'ap-bg-clear': !disabled,
+          'ap-bg-grey-30': disabled,
         },
         className
       )}
