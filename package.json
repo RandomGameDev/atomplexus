@@ -1,0 +1,76 @@
+{
+  "name": "atomplexus",
+  "version": "0.0.1",
+  "type": "module",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./dist/atomplexus.cjs",
+      "import": "./dist/atomplexus.es.js"
+    },
+    "./styles.css": {
+      "require": "./dist/styles.css",
+      "default": "./dist/styles.css"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && npm run build:css",
+    "build:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./dist/styles.css",
+    "lint": "concurrently \"eslint \"src/**\" --fix\" \"stylelint \"**/*.css\" --fix\" \"tsc --noEmit\"",
+    "storybook": "concurrently \"npm run storybook:css\" \"storybook dev -p 6006\"",
+    "storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",
+    "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
+    "build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css",
+    "prepublishOnly": "npm run build",
+    "prepare": "husky install"
+  },
+  "peerDependencies": {
+    "clsx": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@storybook/addon-actions": "^7.2.1",
+    "@storybook/addon-essentials": "^7.2.1",
+    "@storybook/addon-interactions": "^7.2.1",
+    "@storybook/addon-links": "^7.2.1",
+    "@storybook/addon-onboarding": "^1.0.8",
+    "@storybook/blocks": "^7.2.1",
+    "@storybook/react": "^7.2.1",
+    "@storybook/react-vite": "^7.2.1",
+    "@storybook/testing-library": "^0.2.0",
+    "@tailwindcss/forms": "^0.5.4",
+    "@types/react": "^18.2.18",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.2.1",
+    "@typescript-eslint/parser": "^6.2.1",
+    "@vitejs/plugin-react": "^4.0.4",
+    "autoprefixer": "^10.4.14",
+    "concurrently": "^8.2.0",
+    "eslint": "^8.46.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "eslint-plugin-storybook": "^0.6.13",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3",
+    "postcss": "^8.4.27",
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.4.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "storybook": "^7.2.1",
+    "stylelint": "^15.10.2",
+    "stylelint-config-standard": "^34.0.0",
+    "tailwindcss": "^3.3.3",
+    "typescript": "^5.1.6",
+    "vite": "^4.4.8",
+    "vite-plugin-dts": "^3.5.0",
+    "vite-tsconfig-paths": "^4.2.0"
+  }
+}
