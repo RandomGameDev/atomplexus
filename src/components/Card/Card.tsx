@@ -1,5 +1,6 @@
 import type { StylingProps } from '@customTypes/props'
 import clsx from 'clsx'
+import '../../index.css'
 
 export interface CardProps extends StylingProps {
   disabled?: boolean

@@ -32,6 +32,9 @@ export default {
         sp: '425px',
       },
     },
+    fontFamily: {
+      sans: ['var(--font-roboto)', 'Roboto'],
+    },
     fontSize: {
       12: '0.75rem',
       14: '0.875rem',

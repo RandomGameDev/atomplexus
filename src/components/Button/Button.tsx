@@ -1,6 +1,7 @@
 import type { StylingProps } from '@customTypes/props'
 import clsx from 'clsx'
 import React from 'react'
+import '../../index.css'
 
 export type ButtonTypes = 'button' | 'reset' | 'submit'
 export type ButtonThemes = 'primary' | 'warning' | 'danger' | 'clear'
