@@ -29,11 +29,11 @@
     "lint": "concurrently \"eslint \"src/**\" --fix\" \"stylelint \"**/*.css\" --fix\" \"tsc --noEmit\"",
     "storybook": "concurrently \"npm run storybook:css\" \"storybook dev -p 6006\"",
     "storybook:css": "tailwindcss -w -i ./src/tailwind-entry.css -o ./src/index.css",
-    "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build\"",
+    "build-storybook": "concurrently \"npm run build-storybook:css\" \"storybook build -o storybook-static\"",
     "build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css",
     "prepublishOnly": "npm run build",
     "prepare": "husky install",
-    "chromatic": "npx chromatic --project-token=chpt_785de8eb2b75ded"
+    "chromatic": "npx chromatic --project-token=chpt_785de8eb2b75ded --exit-once-uploaded"
   },
   "peerDependencies": {
     "class-variance-authority": "^0.7.0",
