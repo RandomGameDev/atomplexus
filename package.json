@@ -33,7 +33,7 @@
     "build-storybook:css": "tailwindcss -m -i ./src/tailwind-entry.css -o ./src/index.css",
     "prepublishOnly": "npm run build",
     "prepare": "husky install",
-    "chromatic": "npx chromatic --project-token=chpt_785de8eb2b75ded --exit-once-uploaded"
+    "chromatic": "npx chromatic --project-token=chpt_785de8eb2b75ded --exit-once-uploaded -o storybook-static"
   },
   "peerDependencies": {
     "class-variance-authority": "^0.7.0",
