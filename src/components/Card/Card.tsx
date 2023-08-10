@@ -1,6 +1,4 @@
-import type { StylingProps } from '@customTypes/props'
 import clsx from 'clsx'
-
 export interface CardProps extends StylingProps {
   disabled?: boolean
 }
@@ -13,10 +11,10 @@ export const Card = ({
   return (
     <div
       className={clsx(
-        'ap-rounded-sm ap-border ap-border-grey-50/40 ap-px-6 ap-py-2',
+        'rounded-sm border border-grey-50/40 px-6 py-2',
         {
-          'ap-bg-clear': !disabled,
-          'ap-bg-grey-30': disabled,
+          'bg-clear': !disabled,
+          'bg-grey-30': disabled,
         },
         className
       )}

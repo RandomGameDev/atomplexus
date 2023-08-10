@@ -27,42 +27,42 @@ export const Base: Story = {
 export const Warning: Story = {
   args: {
     children: 'New Assessment',
-    theme: 'warning',
+    variant: 'warning',
   },
 }
 
 export const Danger: Story = {
   args: {
     children: 'New Assessment',
-    theme: 'danger',
+    variant: 'danger',
   },
 }
 
 export const Clear: Story = {
   args: {
     children: 'New Assessment',
-    theme: 'clear',
+    variant: 'clear',
   },
 }
 
 export const Small: Story = {
   args: {
     children: 'New Assessment',
-    size: 'small',
+    size: 'sm',
   },
 }
 
 export const ExtraSmall: Story = {
   args: {
     children: 'New Assessment',
-    size: 'extrasmall',
+    size: 'xs',
   },
 }
 
 export const Disabled: Story = {
   args: {
     children: 'New Assessment',
-    size: 'small',
+    size: 'xs',
     disabled: true,
   },
 }
@@ -71,5 +71,22 @@ export const Square: Story = {
   args: {
     children: 'New Assessment',
     square: true,
+  },
+}
+
+export const SquareWarning: Story = {
+  args: {
+    children: 'New Assessment',
+    square: true,
+    variant: 'warning',
+  },
+}
+
+export const SquareWarningSmall: Story = {
+  args: {
+    children: 'New Assessment',
+    square: true,
+    variant: 'warning',
+    size: 'sm',
   },
 }

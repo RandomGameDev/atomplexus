@@ -3,7 +3,6 @@ const plugin = require('tailwindcss/plugin')
 
 /** @type {import('tailwindcss').Config} */
 export default {
-  prefix: 'ap-',
   content: [
     './src/components/**/*.{js,ts,jsx,tsx}',
     './src/stories/**/*.{js,ts,jsx,tsx}',
@@ -33,7 +32,7 @@ export default {
       },
     },
     fontFamily: {
-      sans: ['var(--font-roboto)', 'Roboto'],
+      sans: ['"Roboto"'],
     },
     fontSize: {
       12: '0.75rem',

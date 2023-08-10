@@ -20,10 +20,9 @@
     "declarationMap": true,
     "baseUrl": ".",
     "paths": {
-      "atomplexus": ["src/index.ts"],
-      "@customTypes/*": ["./src/types/*"]
+      "atomplexus": ["src/index.ts"]
     },
-    "typeRoots": ["node_modules/@types", "src/index.d.ts"],
+    "typeRoots": ["node_modules/@types"],
 
     /* Linting */
     "strict": true,
