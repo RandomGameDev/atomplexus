@@ -11,9 +11,17 @@ import {
 } from '@storybook/blocks'
 import React from 'react'
 
-const preview = {
+const preview: Preview = {
   parameters: {
     actions: { argTypesRegex: '^on[A-Z].*' },
+    backgrounds: {
+      default: 'light',
+      grid: {
+        cellSize: 8,
+        opacity: 0.25,
+        cellAmount: 8,
+      },
+    },
     controls: {
       matchers: {
         color: /(background|color)$/i,

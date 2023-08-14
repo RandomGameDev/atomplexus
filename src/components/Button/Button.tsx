@@ -3,7 +3,7 @@ import React from 'react'
 import { cn } from 'src/lib/utils'
 
 const buttonVariants = cva(
-  'flex items-center justify-center rounded-md font-medium outline-none focus:ring transition-colors focus:ring-info-30 disabled:pointer-events-none disabled:opacity-50 disabled:text-clear disabled:bg-grey-70 disabled:hover:bg-grey-50',
+  'flex gap-1.5 items-center justify-center rounded-md font-medium outline-none focus:ring transition-colors focus:ring-info-30 disabled:pointer-events-none disabled:opacity-50 disabled:text-clear disabled:bg-grey-70 disabled:hover:bg-grey-50 whitespace-nowrap',
   {
     variants: {
       variant: {
@@ -13,9 +13,9 @@ const buttonVariants = cva(
         clear: 'm-[-2px] border-2 bg-clear text-info-70 hover:bg-grey-10',
       },
       size: {
-        default: 'prose-md h-10 px-4 py-2',
-        sm: 'prose-sm p-1.5',
-        xs: 'prose-xs p-1',
+        default: 'prose-md leading-5 h-10 px-4 py-3',
+        sm: 'prose-sm leading-4 h-8 px-3 py-2',
+        xs: 'prose-xs leading-3 h-6 px-2 py-1',
       },
       square: {
         true: 'rounded-none',
@@ -28,23 +28,20 @@ const buttonVariants = cva(
   }
 )
 
-interface Button2Props
+interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
-  leftIcon?: React.ReactElement
-  rightIcon?: React.ReactElement
   square?: boolean
 }
 
-const Button = React.forwardRef<HTMLButtonElement, Button2Props>(
+const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
   (
     {
-      leftIcon,
-      rightIcon,
       variant,
       size,
       className,
       children,
+      type = 'button',
       square = false,
       ...props
     },
@@ -52,16 +49,15 @@ const Button = React.forwardRef<HTMLButtonElement, Button2Props>(
   ): JSX.Element => {
     return (
       <button
+        type={type}
         className={cn(buttonVariants({ variant, size, className, square }))}
         ref={ref}
         {...props}
       >
-        <div className="mb-[2px] pr-2">{leftIcon}</div>
         {children}
-        <div className="mb-[2px] pl-2">{rightIcon}</div>
       </button>
     )
   }
 )
 
-export { Button, type Button2Props }
+export { Button, type ButtonProps }

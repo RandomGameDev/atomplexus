@@ -1,6 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react'
 
-import { Button } from '../'
+import React from 'react'
+import { Button, Icon } from '../'
 
 const meta = {
   title: 'Atoms/Button',
@@ -65,6 +66,29 @@ export const Disabled: Story = {
     size: 'xs',
     disabled: true,
   },
+}
+
+export const WithIcons: Story = {
+  render: () => (
+    <div className="flex items-center gap-4">
+      <Button>
+        <Icon name="FilePlus2" />
+        New Assessment
+      </Button>
+      <Button size="sm" variant="clear">
+        <Icon name="FilePlus2" size="sm" />
+        New Assessment
+      </Button>
+      <Button size="sm">
+        <Icon name="FilePlus2" size="sm" />
+        New Assessment
+      </Button>
+      <Button size="xs">
+        <Icon name="FilePlus2" size="xs" />
+        New Assessment
+      </Button>
+    </div>
+  ),
 }
 
 export const Square: Story = {
