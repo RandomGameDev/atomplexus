@@ -1,6 +1,6 @@
 {
   "name": "atomplexus",
-  "version": "0.0.9",
+  "version": "0.0.11",
   "repository": {
     "url": "git+https://github.com/RandomGameDev/atomplexus.git",
     "type": "git"
@@ -91,5 +91,5 @@
     "url": "https://github.com/RandomGameDev/atomplexus/issues"
   },
   "homepage": "https://github.com/RandomGameDev/atomplexus#readme",
-  "_id": "atomplexus@0.0.9"
+  "_id": "atomplexus@0.0.11"
 }
