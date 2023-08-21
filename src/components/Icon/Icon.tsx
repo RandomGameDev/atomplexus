@@ -5,11 +5,13 @@ import { cn } from 'src/lib/utils'
 interface IconProps extends LucideProps {
   name: keyof typeof icons
   size?: 'default' | 'sm' | 'xs' | string | number
+  spin?: boolean
 }
 
 const Icon = ({
   name,
   className,
+  spin = false,
   size = 'default',
   ...props
 }: IconProps): JSX.Element => {
@@ -17,7 +19,7 @@ const Icon = ({
 
   return (
     <LucideIcon
-      className={cn(className)}
+      className={cn({ 'animate-spin': spin }, className)}
       size={
         size === 'default' ? 20 : size === 'sm' ? 18 : size === 'xs' ? 16 : size
       }

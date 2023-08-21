@@ -794,6 +794,16 @@ select {
   height: 2rem;
 }
 
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
 .items-center {
   align-items: center;
 }
@@ -978,14 +988,14 @@ select {
   pointer-events: none;
 }
 
-.disabled\:bg-grey-70:disabled {
-  --tw-bg-opacity: 1;
-  background-color: rgb(96 96 96 / var(--tw-bg-opacity));
-}
-
 .disabled\:bg-grey-30:disabled {
   --tw-bg-opacity: 1;
   background-color: rgb(231 231 231 / var(--tw-bg-opacity));
+}
+
+.disabled\:bg-grey-70:disabled {
+  --tw-bg-opacity: 1;
+  background-color: rgb(96 96 96 / var(--tw-bg-opacity));
 }
 
 .disabled\:text-clear:disabled {
