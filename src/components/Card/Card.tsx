@@ -13,7 +13,7 @@ const Card = ({
   return (
     <div
       className={cn(
-        'rounded-sm border border-grey-50/40 bg-clear px-6 py-2 disabled:bg-grey-30',
+        'rounded-sm border border-grey-50/40 bg-clear px-6 py-4 disabled:bg-grey-30',
         {
           'bg-clear': !disabled,
           'bg-grey-30': disabled,

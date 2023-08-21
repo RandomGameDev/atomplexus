@@ -19,3 +19,11 @@ export const Base: Story = {
     size: 24,
   },
 }
+
+export const SpinningIcon: Story = {
+  args: {
+    name: 'Loader2',
+    size: 24,
+    spin: true,
+  },
+}
