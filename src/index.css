@@ -877,6 +877,16 @@ select {
   background-color: rgb(252 185 0 / var(--tw-bg-opacity));
 }
 
+.bg-success-70 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(63 128 5 / var(--tw-bg-opacity));
+}
+
+.bg-success-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(105 178 10 / var(--tw-bg-opacity));
+}
+
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -915,11 +925,6 @@ select {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.px-5 {
-  padding-left: 1.25rem;
-  padding-right: 1.25rem;
 }
 
 .font-medium {
@@ -978,6 +983,11 @@ select {
 .hover\:bg-warning-70:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(181 123 0 / var(--tw-bg-opacity));
+}
+
+.hover\:bg-success-50:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(105 178 10 / var(--tw-bg-opacity));
 }
 
 .focus\:ring:focus {

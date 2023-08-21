@@ -25,6 +25,13 @@ export const Base: Story = {
   },
 }
 
+export const Success: Story = {
+  args: {
+    children: 'New Assessment',
+    variant: 'success',
+  },
+}
+
 export const Warning: Story = {
   args: {
     children: 'New Assessment',
