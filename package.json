@@ -1,6 +1,6 @@
 {
   "name": "atomplexus",
-  "version": "0.0.11",
+  "version": "0.0.12",
   "repository": {
     "url": "git+https://github.com/RandomGameDev/atomplexus.git",
     "type": "git"
@@ -35,10 +35,15 @@
     "prepare": "husky install",
     "chromatic": "npx chromatic --project-token=chpt_785de8eb2b75ded --exit-once-uploaded -o storybook-static"
   },
+  "dependencies": {
+    "@radix-ui/react-accordion": "^1.1.2",
+    "@radix-ui/react-progress": "^1.0.3",
+    "@radix-ui/react-toast": "^1.1.4"
+  },
   "peerDependencies": {
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "lucide-react": "^0.268.0",
+    "lucide-react": "^0.269.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "tailwind-merge": "^1.14.0"
@@ -52,18 +57,18 @@
     "@storybook/react": "^7.3.2",
     "@storybook/react-vite": "^7.3.2",
     "@storybook/testing-library": "^0.2.0",
-    "@tailwindcss/forms": "^0.5.4",
-    "@types/react": "^18.2.20",
+    "@tailwindcss/forms": "^0.5.5",
+    "@types/react": "^18.2.21",
     "@types/react-dom": "^18.2.7",
-    "@typescript-eslint/eslint-plugin": "^6.4.0",
-    "@typescript-eslint/parser": "^6.4.0",
+    "@typescript-eslint/eslint-plugin": "^6.4.1",
+    "@typescript-eslint/parser": "^6.4.1",
     "@vitejs/plugin-react": "^4.0.4",
     "autoprefixer": "^10.4.15",
-    "chromatic": "^6.22.0",
+    "chromatic": "^6.24.1",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
-    "concurrently": "^8.2.0",
-    "eslint": "^8.47.0",
+    "concurrently": "^8.2.1",
+    "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react-hooks": "^4.6.0",
@@ -71,7 +76,7 @@
     "eslint-plugin-storybook": "^0.6.13",
     "husky": "^8.0.3",
     "lint-staged": "^14.0.1",
-    "lucide-react": "^0.268.0",
+    "lucide-react": "^0.269.0",
     "postcss": "^8.4.28",
     "prettier": "^3.0.2",
     "prettier-plugin-tailwindcss": "^0.5.3",
@@ -82,7 +87,7 @@
     "stylelint-config-standard": "^34.0.0",
     "tailwind-merge": "^1.14.0",
     "tailwindcss": "^3.3.3",
-    "typescript": "^5.1.6",
+    "typescript": "^5.2.2",
     "vite": "^4.4.9",
     "vite-plugin-dts": "^3.5.2",
     "vite-tsconfig-paths": "^4.2.0"
@@ -91,5 +96,5 @@
     "url": "https://github.com/RandomGameDev/atomplexus/issues"
   },
   "homepage": "https://github.com/RandomGameDev/atomplexus#readme",
-  "_id": "atomplexus@0.0.11"
+  "_id": "atomplexus@0.0.12"
 }

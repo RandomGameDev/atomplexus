@@ -121,3 +121,11 @@ export const SquareWarningSmall: Story = {
     size: 'sm',
   },
 }
+
+export const PropagateEvents: Story = {
+  args: {
+    children: 'Propagate',
+    size: 'sm',
+    propagate: true,
+  },
+}

@@ -25,3 +25,10 @@ export const Disabled: Story = {
     disabled: true,
   },
 }
+
+export const NoPadding: Story = {
+  args: {
+    children: 'This is a card',
+    noPad: true,
+  },
+}

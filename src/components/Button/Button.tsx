@@ -33,6 +33,7 @@ interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
   square?: boolean
+  propagate?: boolean
 }
 
 const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
@@ -40,19 +41,32 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     {
       variant,
       size,
+      onClick,
       className,
       children,
       type = 'button',
       square = false,
+      propagate = false,
       ...props
     },
     ref
   ): JSX.Element => {
+    const handleClick = (
+      event: React.MouseEvent<HTMLButtonElement, MouseEvent>
+    ) => {
+      if (onClick) {
+        onClick(event)
+      }
+
+      if (!propagate) event.stopPropagation()
+    }
+
     return (
       <button
         type={type}
         className={cn(buttonVariants({ variant, size, className, square }))}
         ref={ref}
+        onClick={handleClick}
         {...props}
       >
         {children}
