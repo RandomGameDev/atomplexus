@@ -53,6 +53,13 @@ export const Clear: Story = {
   },
 }
 
+export const Ghost: Story = {
+  args: {
+    children: 'New Assessment',
+    variant: 'ghost',
+  },
+}
+
 export const Small: Story = {
   args: {
     children: 'New Assessment',
