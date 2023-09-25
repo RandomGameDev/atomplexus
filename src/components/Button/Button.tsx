@@ -7,12 +7,15 @@ const buttonVariants = cva(
   {
     variants: {
       variant: {
-        default: 'bg-info-70 text-clear hover:bg-info-50',
-        success: 'bg-success-70 text-clear hover:bg-success-50',
-        warning: 'bg-warning-50 text-clear hover:bg-warning-70',
-        danger: 'bg-danger-70 text-clear hover:bg-danger-50',
-        clear: 'm-[-2px] border-2 bg-clear text-info-70 hover:bg-grey-30',
-        ghost: 'hover:bg-grey-30 text-grey-90 bg-transparent',
+        default: 'bg-info-70 text-clear hover:bg-info-50 focus:bg-info-50',
+        success:
+          'bg-success-70 text-clear hover:bg-success-50 focus:bg-success-50',
+        warning:
+          'bg-warning-50 text-clear hover:bg-warning-70 focus:bg-warning-70',
+        danger: 'bg-danger-70 text-clear hover:bg-danger-50 focus:bg-danger-50',
+        clear:
+          'm-[-2px] border-2 bg-clear text-info-70 hover:bg-grey-10 focus:bg-grey-10',
+        ghost: 'hover:bg-grey-30 text-grey-90 bg-transparent focus:bg-grey-30',
       },
       size: {
         default: 'prose-md leading-5 h-10 px-4 py-3',
