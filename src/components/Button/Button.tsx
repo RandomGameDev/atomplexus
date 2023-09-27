@@ -3,7 +3,7 @@ import React from 'react'
 import { cn } from 'src/lib/utils'
 
 const buttonVariants = cva(
-  'flex gap-1.5 items-center justify-center rounded-md font-medium outline-none focus:ring transition-colors focus:ring-info-30 disabled:pointer-events-none disabled:opacity-50 disabled:text-clear disabled:bg-grey-70 disabled:hover:bg-grey-50 whitespace-nowrap',
+  'flex items-center justify-center outline-none focus:ring transition-colors focus:ring-info-30 disabled:pointer-events-none disabled:opacity-50 disabled:text-clear disabled:bg-grey-70 disabled:hover:bg-grey-50 whitespace-nowrap font-semibold',
   {
     variants: {
       variant: {
@@ -13,17 +13,21 @@ const buttonVariants = cva(
         warning:
           'bg-warning-50 text-clear hover:bg-warning-70 focus:bg-warning-70',
         danger: 'bg-danger-70 text-clear hover:bg-danger-50 focus:bg-danger-50',
-        clear:
+        outline:
           'm-[-2px] border-2 bg-clear text-info-70 hover:bg-grey-10 focus:bg-grey-10',
         ghost: 'hover:bg-grey-30 text-grey-90 bg-transparent focus:bg-grey-30',
+        link: 'bg-transparent hover:underline underline-offset-4 text-dim',
       },
       size: {
-        default: 'prose-md leading-5 h-10 px-4 py-3',
-        sm: 'prose-sm leading-4 h-8 px-3 py-2',
-        xs: 'prose-xs leading-3 h-6 px-2 py-1',
+        default: 'prose-sm leading-4 h-10 px-3 py-2 gap-2 rounded-md',
+        sm: 'prose-sm leading-4 h-8 px-2.5 py-1.5 gap-1.5 rounded-md',
+        xs: 'prose-xs leading-3 h-6 px-2 py-1 gap-1 rounded',
       },
       square: {
         true: 'rounded-none',
+      },
+      icon: {
+        true: 'p-1 aspect-square',
       },
     },
     defaultVariants: {
@@ -36,6 +40,7 @@ const buttonVariants = cva(
 interface ButtonProps
   extends React.ButtonHTMLAttributes<HTMLButtonElement>,
     VariantProps<typeof buttonVariants> {
+  icon?: boolean
   square?: boolean
   propagate?: boolean
 }
@@ -49,6 +54,7 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
       className,
       children,
       type = 'button',
+      icon = false,
       square = false,
       propagate = false,
       ...props
@@ -68,7 +74,9 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
     return (
       <button
         type={type}
-        className={cn(buttonVariants({ variant, size, className, square }))}
+        className={cn(
+          buttonVariants({ variant, size, className, square, icon })
+        )}
         ref={ref}
         onClick={handleClick}
         {...props}

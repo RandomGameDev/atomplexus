@@ -49,7 +49,7 @@ export const Danger: Story = {
 export const Clear: Story = {
   args: {
     children: 'New Assessment',
-    variant: 'clear',
+    variant: 'outline',
   },
 }
 
@@ -57,6 +57,13 @@ export const Ghost: Story = {
   args: {
     children: 'New Assessment',
     variant: 'ghost',
+  },
+}
+
+export const Link: Story = {
+  args: {
+    children: 'New Assessment',
+    variant: 'link',
   },
 }
 
@@ -89,7 +96,7 @@ export const WithIcons: Story = {
         <Icon name="FilePlus2" />
         New Assessment
       </Button>
-      <Button size="sm" variant="clear">
+      <Button size="sm" variant="outline">
         <Icon name="FilePlus2" size="sm" />
         New Assessment
       </Button>
@@ -98,9 +105,52 @@ export const WithIcons: Story = {
         New Assessment
       </Button>
       <Button size="xs">
-        <Icon name="FilePlus2" size="xs" />
+        <Icon name="FilePlus2" size="2xs" />
         New Assessment
       </Button>
+    </div>
+  ),
+}
+
+export const Sizes: Story = {
+  render: () => (
+    <div className="flex flex-col gap-4">
+      <div className="flex items-center gap-4">
+        <Button>
+          <Icon name="Check" />
+          Create Item
+        </Button>
+        <Button size="sm">
+          <Icon name="Check" size="sm" />
+          Create Item
+        </Button>
+        <Button size="xs">
+          <Icon name="Check" size="xs" />
+          Create Item
+        </Button>
+      </div>
+      <div className="flex items-center gap-4">
+        <Button icon>
+          <Icon name="Check" />
+        </Button>
+        <Button size="sm" icon>
+          <Icon name="Check" size="sm" />
+        </Button>
+        <Button size="xs" icon>
+          <Icon name="Check" size="xs" />
+        </Button>
+      </div>
+      <div className="flex items-center gap-4">
+        <Button icon square>
+          <Icon name="Check" />
+        </Button>
+        <Button size="sm" icon square>
+          <Icon name="Check" size="sm" />
+        </Button>
+        <Button size="xs" icon square>
+          <Icon name="Check" size="xs" />
+        </Button>
+      </div>
     </div>
   ),
 }
