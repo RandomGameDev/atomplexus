@@ -108,11 +108,11 @@ const CustomHeaderJSX = () => {
       </div>
 
       <div className="flex gap-2">
-        <Button size="sm" variant="clear">
+        <Button size="sm" variant="ghost">
           <Icon name="Scroll" size="sm" />
           Add Assessment
         </Button>
-        <Button size="sm" variant="clear">
+        <Button size="sm" variant="ghost">
           <Icon name="MessagesSquare" size="sm" />
           Add Chat Simulation
         </Button>
