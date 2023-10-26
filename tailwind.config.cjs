@@ -113,7 +113,7 @@ export default {
         90: '#784B00',
       },
       danger: {
-        DEFAULT: '#9A9A9A',
+        DEFAULT: '#DD3D1C',
         10: '#FDE6D1',
         30: '#F49E74',
         50: '#DD3D1C',
@@ -124,7 +124,6 @@ export default {
   },
   plugins: [
     require('tailwindcss-animate'),
-    require('@tailwindcss/forms'),
     plugin(({ addComponents }) => {
       addComponents({
         '.prose-h1': {

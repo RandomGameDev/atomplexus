@@ -3,6 +3,7 @@ import type { StorybookConfig } from '@storybook/react-vite'
 const config: StorybookConfig = {
   stories: ['../src/**/*.stories.@(mjs|ts|tsx)'],
   addons: [
+    'storybook-dark-mode',
     '@storybook/addon-links',
     '@storybook/addon-essentials',
     '@storybook/addon-interactions',
